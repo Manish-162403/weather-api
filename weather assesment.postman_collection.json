@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "cec5f0fd-cd16-459c-8fb7-755b61535d84",
+		"name": "weather assesment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11160250"
+	},
+	"item": [
+		{
+			"name": "add city",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"city\" : \"Banglore\",\n    \"city_id\" : \"5\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/addCity",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addCity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch data by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/location/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"location",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all cities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/allCity",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"allCity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete city by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/location/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"location",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch all log Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/cityLogData",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cityLogData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updated City",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"city\" : \"Banglore\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/location/5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"location",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all city weather data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/getAllCityWeatherData",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getAllCityWeatherData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
